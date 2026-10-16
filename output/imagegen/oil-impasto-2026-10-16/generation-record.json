@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-16",
+  "tool": "built-in image_gen",
+  "sourceUrl": "https://arts-ai.app/reference/oil-impasto",
+  "input": {
+    "file": "input.png",
+    "description": "AI로 생성한 가상의 성인 여성 사진. 실제 인물이 아님.",
+    "prompt": "Create one realistic natural photographic portrait of a fictional Korean woman aged 38, with a chin-length dark brown bob haircut tucked behind one ear, natural skin texture and a few faint freckles, a gentle closed-mouth smile, looking at the camera. She wears a muted olive knitted cardigan over a cream crew-neck shirt and small round gold stud earrings. Chest-up composition, body turned slightly three-quarter while face looks toward camera, both shoulders fully visible with comfortable headroom. She sits in a simple home near a window, with a softly out-of-focus beige wall and a leafy houseplant in the background. Soft neutral daylight, authentic skin and knitted fabric detail, balanced photographic color, ordinary candid portrait photograph rather than a polished beauty advertisement. Vertical 2:3 image. One adult person only. No text, logos, watermark, frame, painting, illustration, or CGI."
+  },
+  "transformation": {
+    "file": "result.png",
+    "prompt": "Transform the uploaded photograph into a thick oil painting built with a palette knife, in the manner of alla prima portrait painting on coarse linen canvas.\n\nIdentity lock: Preserve the subject's identity, facial features, hairstyle, clothing, pose, composition and framing exactly. Do not redesign, slim, age or restyle the subject and do not move anything in the frame - only change the medium the picture is made of.\nStyle: Heavy impasto oil paint. Every form is built from short loaded strokes of wet pigment laid edge to edge, with ridges of paint standing up off the surface and catching light along their crests. Knife-scraped planes on the cheekbones, forehead and jaw; softer loaded-brush blending in the shadow side. Woven linen tooth shows through in the thinnest passages.\nLighting: Warm low side light raking across the face from one side, so the raised paint ridges cast their own tiny shadows across the canvas surface. Luminous half-tones, deep transparent shadows, one small bright highlight in each eye left as a single unblended dab.\nRendering: Visible directional brush and knife marks that follow the anatomy - strokes wrap around the cheek, run along the bridge of the nose, break into blocky facets at the collar. Hair rendered as broad ribbons of pigment, not individual strands. Edges lost and found: sharp where the light hits, dissolving into the background where it does not. Slight physical relief and craquelure in the thickest paint.\nColor palette: Restrained earth palette - raw umber, burnt sienna, yellow ochre, lead white, a single chilled accent of ultramarine in the shadows. Warm skin built from ochre and white with green-grey turning tones at the edges of the form.\n\nBackground: Loosely scraped tonal ground, darker than the subject, worked with a wide knife into a soft warm-to-slate gradient. No detail, no added objects.\n\nMood: Quiet studio portrait, painted from life in one sitting.\nNegatives: no smooth digital airbrushing, no anime, no watercolor, no cartoon linework, no HDR gloss, no added text or signature, no frame.",
+    "promptPolicy": "공개된 Oil Impasto 프롬프트 원문만 적용. 별도 스타일 지시 없음."
+  },
+  "review": {
+    "style": "두꺼운 물감의 돌출과 팔레트 나이프 자국, 캔버스 결이 얼굴·머리카락·의상·배경에 뚜렷함.",
+    "preserved": "단발머리, 작은 금색 귀걸이, 올리브색 카디건·크림색 상의, 미소와 전반적인 인물 구도 유지.",
+    "changed": "원본의 창문·화분 배경이 어두운 갈색/회청색 회화 배경으로 교체되고 빛과 색온도가 더 따뜻하게 변함. 얼굴 세부도 회화적으로 재해석됨.",
+    "assessment": "유화물감 느낌 검증에는 적합. 배경까지 그대로 보존하는 변환으로 소개하기는 어려움.",
+    "galleryPublished": false
+  }
+}
