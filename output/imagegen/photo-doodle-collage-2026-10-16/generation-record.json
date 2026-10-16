@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-16",
+  "tool": "built-in image_gen",
+  "concept": "사진 속 주인공을 중심으로 한 밀도 높은 흑백 두들 콜라주",
+  "inspirationUrls": [
+    "https://prompty.id/prompt/9-monochrome-kawaii-doodle-universe-020438",
+    "https://coloring.app/gallery/pages/empowerment-through-education-doodles-coloring-page"
+  ],
+  "userReferenceRole": "사용자가 첨부한 흑백 음악 두들 이미지는 콘셉트 판단에 참고. 생성 도구에는 새로 만든 원본 인물 사진 1장만 첨부.",
+  "promptPolicy": "외부 원문을 그대로 사용한 테스트가 아님. 사진 중심 구성과 굵고 선명한 흑백 두들 밀도를 결합해 새로 작성한 한국어 프롬프트를 적용.",
+  "input": {
+    "file": "input.png",
+    "sha256": "bf49783d503744484c6382165e55b4a0ddc76d08780632dfa45f81a33090a581",
+    "prompt": "Create a realistic natural photograph of one fictional Korean man aged 32 with short slightly wavy black hair, round thin dark glasses, and a relaxed friendly closed-mouth smile. He is sitting on a simple wooden stool in a small home music room, holding one natural honey-colored acoustic guitar across his lap with both hands resting naturally on it. He wears a plain rust-orange crew-neck sweatshirt, dark blue jeans and off-white sneakers. Over-ear headphones rest around his neck. Include his entire head, torso, hands, guitar and knees, with comfortable space around him. Behind him, a compact electronic keyboard sits on a desk at the left, a small leafy potted plant is on the right, and a plain cream ceramic coffee mug is on the desk. Real skin, fabric and wood detail, soft natural daylight, ordinary authentic candid photography, balanced colors, no studio beauty retouching. One person only. Landscape 3:2 composition, subject centered. No written words, brand marks, logos, watermarks or frame. This is a photo, not an illustration.",
+    "description": "AI로 생성한 가상의 성인 남성 사진. 실제 인물이 아님."
+  },
+  "transformation": {
+    "file": "result.png",
+    "sha256": "52cebffd4ef8c3c6250d3c83a31c5eb7af75ed151e380f6d200eabeb897d3c08",
+    "prompt": "첨부 이미지 1은 변환할 원본 인물 사진이다. 이 사진을 기반으로 완성도 높은 흑백 두들 콜라주 한 장을 만들어줘.\n\n중앙 주인공: 사진 속 안경 쓴 남성을 화면 중앙의 가장 큰 주인공으로 재해석해줘. 얼굴형, 짧고 약간 웨이브진 머리, 둥근 안경, 미소, 맨투맨과 청바지의 형태, 목에 건 헤드폰, 기타를 안고 앉은 자세가 알아보이도록 유지해줘. 인물과 기타는 합쳐서 화면 너비의 약 35~40%를 차지하고, 주변 캐릭터보다 확실히 크게 보여줘. 얼굴은 단순하면서 매력적인 귀여운 만화 선화로, 눈과 안경이 겹쳐 지저분해지지 않게 명료하게 그려줘. 인물의 얼굴과 손, 기타의 주요 윤곽은 주변 낙서에 가리지 않게 해줘. 사진 전체를 검은 펜으로 다시 그린 일관된 그림으로 완성해줘.\n\n주변 세계: 원본의 기타·헤드폰·키보드·화분·커피잔을 귀여운 두들 아이콘과 캐릭터로 확장해줘. 웃는 음표, 표정 있는 작은 스피커, 기타 피크, 카세트테이프, 리듬을 타는 작은 로봇과 둥근 몬스터, 고양이 캐릭터, 별, 하트, 번개, 소용돌이, 점과 줄무늬가 서로 맞물리며 화면 끝까지 채워지게 해줘. 같은 아이콘을 기계적으로 복제하지 말고 캐릭터의 실루엣·표정·크기·방향을 다양하게 그려줘. 원본 속 남성을 닮은 두 번째 인물은 추가하지 마.\n\n선과 완성도: Monochrome kawaii doodle collage, bold black marker line art, clean crisp ink contours, solid black accents, rounded line endings, dense edge-to-edge packed composition, playful expressive characters. 흰 바탕에 진한 검은색만 사용해줘. 굵은 외곽선과 조금 가는 내부선을 구분하고 선은 자신감 있고 깔끔하게 연결해줘. 검게 채운 모양과 흰 내부 공간의 균형을 맞춰 축소해서 봐도 각 캐릭터가 잘 읽히게 해줘. 캐릭터의 경계는 또렷하고, 작은 틈은 점·곡선·작은 도형으로 채우되 선이 한 덩어리로 엉키지 않게 해줘. 가장자리에서는 일부 낙서가 자연스럽게 잘려 화면 밖까지 이어지는 느낌을 만들어줘.\n\n구도와 제한: 중앙 인물이 주변 낙서 세계의 주인공으로 자연스럽게 섞이게 해줘. 별도 액자나 사진 테두리 없이 한 장의 완성된 가로 3:2 아트워크로 만들어줘. 글자·알파벳·숫자·로고·서명·워터마크는 넣지 마. 회색 음영, 컬러, 그라데이션, 연필 스케치, 사진 질감, 3D 표현은 사용하지 마. 큰 빈 배경 없이 빽빽하지만 경쾌하고 정돈된 두들 세계로 완성해줘."
+  },
+  "review": {
+    "preserved": "중앙 인물 한 명, 둥근 안경, 짧은 웨이브 머리, 목에 건 헤드폰, 기타를 안고 앉은 포즈, 키보드·화분·커피잔의 테마 유지.",
+    "style": "흑백의 굵고 또렷한 윤곽선, 가장자리까지 이어지는 음악 소품·귀여운 캐릭터·도형, 강한 검정과 흰색 대비.",
+    "deviations": "주인공과 기타가 지정한 화면 너비 35~40%보다 크게 표현됨. 주인공은 주변 캐릭터보다 세밀한 인물 선화이며 바지에는 촘촘한 해칭이 있음. 완전한 단순 카와이 캐릭터나 회색처럼 보이는 질감이 전혀 없는 결과는 아님.",
+    "galleryPublished": false
+  }
+}
