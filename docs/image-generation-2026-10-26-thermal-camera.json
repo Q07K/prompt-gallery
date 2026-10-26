@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "id": "thermal-camera",
+  "version": "v1",
+  "tool": "built-in image_gen.imagegen",
+  "approval": {
+    "userResponse": "ㅇㅋ 맘에 들었다 pr해",
+    "scope": "approved result; catalog registration, validation, commit, push and Draft PR"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "NaNIsaac/prompt-gallery",
+  "branch": "codex/thermal-camera",
+  "baseCommit": "6b5e69567ff5c044317e371a86767c9c275df4a8",
+  "source": {
+    "type": "AI-generated fictional adult person; not a user photograph",
+    "generationPrompt": "가상의 성인 인물 한 명을 촬영한 자연스러운 실사 사진. 상반신이 허리 위까지 보이는 정면에 가까운 3/4 구도. 인물은 투명 렌즈의 검은 테 안경을 쓰고, 두꺼운 어두운 재킷을 입었으며 목과 한쪽 손목이 조금 드러난다. 한 손에 로고 없는 무광 머그컵을 들고 있고 컵에는 따뜻한 음료가 담겨 약한 김이 보인다. 얼굴과 안경, 손, 컵이 가리지 않고 분명하게 보인다. 단순한 실내 배경, 부드러운 자연광, 중립적인 표정, 사진 같은 피부와 재질. 화면 오른쪽에는 약간의 여백을 둔다. 글자, 로고, 워터마크는 없다.",
+    "transparent_background": false,
+    "generatedFile": "exec-1a0f24a5-403f-41ff-9cce-0049a12910b0.png",
+    "pngSha256": "34edd06407ce913d1bdac645733ddfcb1b908e2a6ac5536fe481a1400668e265",
+    "publishedFile": "assets/images/thermal-camera.reference.webp"
+  },
+  "publicPrompt": "첨부한 사진 속 인물을 열화상 카메라로 찍은 영상처럼 바꿔 주세요.\n\n사진과 같은 자세와 구도를 유지한 채, 장면 전체를 적외선 열화상 이미지로 표현합니다. 체온이 높은 얼굴·목·손은 흰색에 가까운 노랑과 주황으로 밝게 빛나고, 팔다리와 몸통은 빨강과 자홍, 차가운 배경은 보라와 짙은 남색으로 부드럽게 이어지는 아이언 팔레트 그라데이션으로 칠하세요. 실제 열화상처럼 색 경계가 부드럽고 해상도가 낮은 느낌이며, 약간의 노이즈가 있어야 합니다.\n\n옷과 머리카락은 질감이 아니라 표면 온도로만 보입니다. 두꺼운 겉옷은 몸보다 차가운 보라·파랑으로, 옷 틈새로 드러난 목과 손목은 따뜻한 색으로 표현하세요. 안경 렌즈는 열을 통과시키지 않아 거울처럼 어둡게 나오고, 안경 주변의 눈가는 밝게 빛납니다. 컵 안의 뜨거운 음료나 휴대폰 같은 소지품이 있으면 열원으로 밝게 표시하세요. 얼굴은 눈코입이 알아볼 수 있되 사진 같은 피부 질감 없이 색 덩어리로만 보이게 합니다.\n\n화면 오른쪽에는 세로 온도 막대를 두어 아래는 짙은 남색, 위는 흰색으로 이어지게 하고, 막대 위아래에 작은 숫자로 온도 값(예: 36.5°C)을 표시해 주세요. 화면 가운데에는 작은 십자 조준선과 중심 온도 숫자를 넣고, 열화상 카메라의 어두운 모서리 비네팅을 약하게 주세요.\n\n실제 사진 같은 컬러 화면, 만화풍, 공포 분위기, 얼굴 안의 뼈나 장기, 그리고 온도 막대의 숫자 외의 글자, 브랜드 로고, 워터마크는 넣지 마세요.",
+  "transformation": {
+    "prompt": "첨부한 사진 속 인물을 열화상 카메라로 찍은 영상처럼 바꿔 주세요.\n\n사진과 같은 자세와 구도를 유지한 채, 장면 전체를 적외선 열화상 이미지로 표현합니다. 체온이 높은 얼굴·목·손은 흰색에 가까운 노랑과 주황으로 밝게 빛나고, 팔다리와 몸통은 빨강과 자홍, 차가운 배경은 보라와 짙은 남색으로 부드럽게 이어지는 아이언 팔레트 그라데이션으로 칠하세요. 실제 열화상처럼 색 경계가 부드럽고 해상도가 낮은 느낌이며, 약간의 노이즈가 있어야 합니다.\n\n옷과 머리카락은 질감이 아니라 표면 온도로만 보입니다. 두꺼운 겉옷은 몸보다 차가운 보라·파랑으로, 옷 틈새로 드러난 목과 손목은 따뜻한 색으로 표현하세요. 안경 렌즈는 열을 통과시키지 않아 거울처럼 어둡게 나오고, 안경 주변의 눈가는 밝게 빛납니다. 컵 안의 뜨거운 음료나 휴대폰 같은 소지품이 있으면 열원으로 밝게 표시하세요. 얼굴은 눈코입이 알아볼 수 있되 사진 같은 피부 질감 없이 색 덩어리로만 보이게 합니다.\n\n화면 오른쪽에는 세로 온도 막대를 두어 아래는 짙은 남색, 위는 흰색으로 이어지게 하고, 막대 위아래에 작은 숫자로 온도 값(예: 36.5°C)을 표시해 주세요. 화면 가운데에는 작은 십자 조준선과 중심 온도 숫자를 넣고, 열화상 카메라의 어두운 모서리 비네팅을 약하게 주세요.\n\n실제 사진 같은 컬러 화면, 만화풍, 공포 분위기, 얼굴 안의 뼈나 장기, 그리고 온도 막대의 숫자 외의 글자, 브랜드 로고, 워터마크는 넣지 마세요.",
+    "referencedImages": [
+      "assets/images/thermal-camera.reference.webp"
+    ],
+    "additionalInstructions": "",
+    "styleImagesAttached": 0,
+    "transparent_background": false,
+    "generatedFile": "exec-95a8f884-174a-4a14-af03-12fa54414e1d.png",
+    "pngSha256": "000051d36b86fbfa28b0b340422c9676d87ab490816352c903f7171f8dcae60c",
+    "postEditing": false
+  },
+  "assets": [
+    {
+      "role": "reference",
+      "path": "assets/images/thermal-camera.reference.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "4265b02c86fb3a041b0151b569232fe09d6fd110b393366c37b7e21a563f6b95",
+      "losslessDecodedPixelMatch": true
+    },
+    {
+      "role": "result",
+      "path": "assets/images/thermal-camera.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "26cc1ed154e8a9603433cf31d498fefa521849031bd7e3da882b9b522f39655d",
+      "losslessDecodedPixelMatch": true
+    },
+    {
+      "role": "thumbnail",
+      "path": "assets/images/thermal-camera.thumb.webp",
+      "width": 480,
+      "height": 360,
+      "sha256": "d98a8bc2109e1a3e671370ba9c09c5278b98bce8cd4c22798e4925dd3d188df4",
+      "aspectRatioPreserved": true
+    }
+  ],
+  "review": "thermal-camera-review-2026-10-26.md",
+  "validation": {
+    "status": "passed",
+    "command": "npm run check -- -- --global-timeout=900000",
+    "unitTestsPassed": 34,
+    "buildPromptCount": 64,
+    "browserTestsPassed": 64,
+    "globalTimeoutNote": "Only the overall local execution limit was raised; individual tests and assertions were unchanged.",
+    "existingCatalogItemsPreserved": 63,
+    "publicPromptExact": true,
+    "sourceAndResultDecodedPixelsMatch": true
+  }
+}
