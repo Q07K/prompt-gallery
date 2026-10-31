@@ -1,5 +1,7 @@
 # 부분 채색 감성 라인드로잉 v5 등록 검토 — 2026-10-26
 
+> 이 문서는 v5 당시 기록입니다. 결과 이미지는 v5 커밋에 고정했습니다. 현재 개선 내용은 [v10 검토](spot-color-line-art-review-2026-10-31.md)를 참고하세요.
+
 사용자가 v3의 단순함 부족을 지적한 뒤 머리·손발·옷·가구의 정보량을 줄여 v4를 만들고, 선을 가늘게 조정한 v5를 시험했다. 사용자는 v5를 보고 **결과 확정·PR 제출**을 선택했다. 공개 문구와 결과는 그 v5 그대로다.
 
 - 브랜치: codex/spot-color-line-art
@@ -15,7 +17,7 @@
 
 | AI 가상 원본 | 공개 v5 결과 |
 |---|---|
-| ![가상 원본](../assets/images/spot-color-line-art.reference.webp) | ![부분 채색 v5](../assets/images/spot-color-line-art.webp) |
+| ![가상 원본](../assets/images/spot-color-line-art.reference.webp) | ![부분 채색 v5](https://raw.githubusercontent.com/Q07K/prompt-gallery/b879bab1b199806d4a5797b93805e854cec2e5c5/assets/images/spot-color-line-art.webp) |
 
 ## 관찰과 한계
 

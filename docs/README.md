@@ -17,6 +17,8 @@
 
 ## 생성 이력과 참고 자료
 
+- [부분 채색 라인드로잉 v10 개선 검토](spot-color-line-art-review-2026-10-31.md), [실제 문구](spot-color-line-art-prompt-v10.txt), [인물·풍경·그림자 입력·결과·해시](image-generation-2026-10-31-spot-color-line-art-v10.json)
+
 - [빈티지 여행 포스터 v2 얼굴 보존 개선 검토](amalfi-summer-face-review-2026-10-22.md), [실제 문구](amalfi-summer-prompt-v2.txt), [전후 문구·입력·파일 해시](image-generation-2026-10-22-amalfi-summer-face.json)
 
 - [여행 사진 도자기 무드등 v3 등록 검토](travel-ceramic-nightlight-review-2026-10-19.md), [실제 문구](travel-ceramic-nightlight-prompt-v3.txt), [원본·결과·해시 기록](image-generation-2026-10-19-travel-ceramic-nightlight.json)

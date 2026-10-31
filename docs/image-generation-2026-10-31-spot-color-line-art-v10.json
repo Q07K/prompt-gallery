@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-31",
+  "id": "spot-color-line-art",
+  "version": "v10",
+  "tool": "built-in image_gen.imagegen",
+  "approval": {
+    "userResponse": "좋다 이거 PR해줘 머지는 내가할게",
+    "scope": "Update existing item, validate, commit, push and submit Draft PR; user will merge",
+    "selectedVersion": "v10"
+  },
+  "baseRepository": "Q07K/prompt-gallery",
+  "headRepository": "Q07K/prompt-gallery",
+  "remote": "origin",
+  "branch": "codex/spot-color-line-art-fidelity",
+  "baseCommit": "b879bab1b199806d4a5797b93805e854cec2e5c5",
+  "publicPrompt": "첨부 사진을 ‘얇은 펜으로 몇 번 슥 그린, 아기자기하고 소박한 일상 라인드로잉’으로 바꿔 주세요. 가장 중요한 그림체 기준은 적은 선, 둥근 큰 형태, 작고 편안한 표정입니다. 사진을 세밀하게 따라 그리기보다 큰 실루엣과 핵심 자세만으로 장면이 읽히게 귀엽게 단순화하세요. 원본 대상의 수와 종류, 주요 자세와 서로 기대거나 잡은 관계는 유지하세요.\n\n실제 사람이 보이는 경우에만 다음 캐릭터 표현을 적용하세요. 성인이라면 성인임이 느껴지는 편안한 비율을 유지하되 머리는 약간 둥글게, 몸과 손발은 부드럽고 소박하게 그리세요. 머리는 흰 속을 가진 한 덩어리로, 바깥 윤곽과 가르마·큰 흐름 곡선 두세 개만 남기세요. 보이는 얼굴은 짧고 부드러운 눈 선 두 개와 작은 미소 정도로, 코·속눈썹·입술 세부는 생략하세요. 안경은 간단한 테만 남기고 볼에는 아주 작은 연분홍 포인트를 넣어도 됩니다. 손은 작은 둥근 외곽과 필요한 엄지 선 정도로 표현하고 손가락 마디와 여러 내부선을 생략하세요. 손의 방향과 원래 동작·접촉을 유지하고 여분의 손가락을 추가하지 마세요. 가려진 손가락을 드러내거나 다섯 손가락을 억지로 펼치지 마세요. 신발은 끈·밑창 없는 둥근 윤곽 하나로 그리세요.\n\n사진에 없는 대상이나 세부를 새로 만들지 마세요. 사람이 없는 사진에는 사람을 그리지 마세요. 사람의 그림자만 보이면 바닥이나 벽 위의 평면적인 그림자 외곽만 단순하게 옮기고, 그 안에 얼굴·머리카락·옷·손가락 내부선을 만들거나 그림자의 주인인 실물 사람을 추가하지 마세요. 뒷모습이나 얼굴이 가려진 사람에게 새 얼굴을 그리지 마세요. 사물·동물·무늬를 사람으로 바꾸거나 의인화하지 마세요. 사진 밖으로 이어져 잘린 윤곽은 원본의 잘린 경계에서 그대로 끝내세요. 보이지 않던 끝부분을 둥글게 마감하거나 신체·사물의 빠진 부분을 상상해 완성하지 마세요. 이 조건은 원본의 내용에 관한 것이며 둥글고 귀여운 그림체의 단순화는 그대로 유지하세요.\n\n옷은 큰 외곽선과 꼭 필요한 접힘 한두 개로만 그리세요. 잔머리·옷의 잔주름·봉제선·단추·주머니는 생략하세요. 원본에 있는 가구도 상판·등받이·좌판·다리 등 기본 구조만 몇 개의 선으로 둥글고 단순하게 옮기세요. 실제 가구의 장식과 복잡한 다리 구조는 복사하지 마세요. 남기는 사물의 손잡이·다리·끈 같은 구조는 사진에서 보이는 개수와 붙은 쪽을 유지하세요. 한쪽에만 보이는 구조를 반대쪽에도 대칭으로 추가하거나 보이지 않는 연결부를 만들지 마세요. 행동에 필요한 원래 소품 한두 개만 남기고 음식·꽃·가방·나뭇잎·배경 장식 같은 부차적인 것은 생략하세요. 풍경이 주제라면 주요 지형과 구조물의 위치 관계만 간결한 몇 줄로 남기세요. 새 소품·가구·식물·동물·상황을 덧붙이지 마세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선입니다. 굵은 테두리를 피하고 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 색을 넣기 전에 채색할 영역을 딱 한 군데만 고르세요. 실제 사람의 상의가 보이면 그중 상의 하나를, 사람이 없으면 실제 주요 사물 하나의 한 면만 선택하세요. 선택한 영역만 원본 대표 색의 아주 연한 파스텔 단색으로 평평하게 채우세요. 그 외의 모든 사물과 배경은 외곽선 안까지 순백색으로 남기세요. 실제 얼굴이 보일 때의 아주 작은 연분홍 볼 포인트만 추가로 허용합니다. 색을 주변에 반복하거나 나머지 옷·피부·머리·가구·나뭇잎·물·하늘에 나눠 칠하지 마세요. 그림자만 주제인 사진은 예외로 그림자 외곽 안만 동일한 옅은 회색으로 평평하게 채우고 다른 부분에는 색을 넣지 마세요. 모든 명암·그라데이션·수채 번짐·종이 질감은 생략하세요.\n\n정사각형 순백색 배경에 주요 대상과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 글자·서명·로고·워터마크는 넣지 마세요.",
+  "promptFile": "docs/spot-color-line-art-prompt-v10.txt",
+  "styleReferences": {
+    "userProvidedImageCount": 2,
+    "role": "Visually inspected during authoring only. Not sent to final generation calls and not published."
+  },
+  "generations": [
+    {
+      "label": "인물",
+      "source": {
+        "type": "AI-generated fictional photograph; not a user photograph",
+        "generationPrompt": "Use case: photorealistic-natural\nCreate one realistic square lifestyle photograph to serve as a fictional source for a photo-to-illustration test. A fictional Korean adult woman in her early thirties with shoulder-length gently wavy dark brown hair, thin round glasses and small hoop earrings is sitting in a simple wooden cafe chair outdoors. She wears a muted peach cardigan over an ivory shirt, charcoal wide-leg trousers and plain white sneakers. A small plain tan shoulder bag hangs from the chair. Three-quarter full-body view, both feet visible. One elbow rests on a small round cafe table and that hand lightly supports her cheek; her other hand rests naturally beside a plain ceramic coffee cup and a small plate with a croissant. Relaxed closed-mouth smile, natural gaze slightly downward. Simple quiet cafe terrace, soft greenery and window in the background, soft overcast daylight. Realistic skin, hair and fabric textures, anatomically plausible hands and feet, natural adult proportions. The woman, table and chair are the clear focus; no other people, no readable text, no logos, no watermark. This is a natural photographic source, not an illustration. Square composition.",
+        "generatedFile": "exec-f89683dd-7d3b-4842-9bc4-d757c395d910.png",
+        "publishedAsset": {
+          "file": "assets/images/spot-color-line-art.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "sourceSha256": "87d83ef7352ba2b32bfeb5955f3fa2b038766f4e52d8de8d9c1e56d8eba5533b",
+          "webpSha256": "87d83ef7352ba2b32bfeb5955f3fa2b038766f4e52d8de8d9c1e56d8eba5533b",
+          "decodedRgbaSha256": "ef50d4253263300987e31ab8c1e67a8010a736cfdeda0ccae69b9c3f486b066d",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v10",
+        "prompt": "첨부 사진을 ‘얇은 펜으로 몇 번 슥 그린, 아기자기하고 소박한 일상 라인드로잉’으로 바꿔 주세요. 가장 중요한 그림체 기준은 적은 선, 둥근 큰 형태, 작고 편안한 표정입니다. 사진을 세밀하게 따라 그리기보다 큰 실루엣과 핵심 자세만으로 장면이 읽히게 귀엽게 단순화하세요. 원본 대상의 수와 종류, 주요 자세와 서로 기대거나 잡은 관계는 유지하세요.\n\n실제 사람이 보이는 경우에만 다음 캐릭터 표현을 적용하세요. 성인이라면 성인임이 느껴지는 편안한 비율을 유지하되 머리는 약간 둥글게, 몸과 손발은 부드럽고 소박하게 그리세요. 머리는 흰 속을 가진 한 덩어리로, 바깥 윤곽과 가르마·큰 흐름 곡선 두세 개만 남기세요. 보이는 얼굴은 짧고 부드러운 눈 선 두 개와 작은 미소 정도로, 코·속눈썹·입술 세부는 생략하세요. 안경은 간단한 테만 남기고 볼에는 아주 작은 연분홍 포인트를 넣어도 됩니다. 손은 작은 둥근 외곽과 필요한 엄지 선 정도로 표현하고 손가락 마디와 여러 내부선을 생략하세요. 손의 방향과 원래 동작·접촉을 유지하고 여분의 손가락을 추가하지 마세요. 가려진 손가락을 드러내거나 다섯 손가락을 억지로 펼치지 마세요. 신발은 끈·밑창 없는 둥근 윤곽 하나로 그리세요.\n\n사진에 없는 대상이나 세부를 새로 만들지 마세요. 사람이 없는 사진에는 사람을 그리지 마세요. 사람의 그림자만 보이면 바닥이나 벽 위의 평면적인 그림자 외곽만 단순하게 옮기고, 그 안에 얼굴·머리카락·옷·손가락 내부선을 만들거나 그림자의 주인인 실물 사람을 추가하지 마세요. 뒷모습이나 얼굴이 가려진 사람에게 새 얼굴을 그리지 마세요. 사물·동물·무늬를 사람으로 바꾸거나 의인화하지 마세요. 사진 밖으로 이어져 잘린 윤곽은 원본의 잘린 경계에서 그대로 끝내세요. 보이지 않던 끝부분을 둥글게 마감하거나 신체·사물의 빠진 부분을 상상해 완성하지 마세요. 이 조건은 원본의 내용에 관한 것이며 둥글고 귀여운 그림체의 단순화는 그대로 유지하세요.\n\n옷은 큰 외곽선과 꼭 필요한 접힘 한두 개로만 그리세요. 잔머리·옷의 잔주름·봉제선·단추·주머니는 생략하세요. 원본에 있는 가구도 상판·등받이·좌판·다리 등 기본 구조만 몇 개의 선으로 둥글고 단순하게 옮기세요. 실제 가구의 장식과 복잡한 다리 구조는 복사하지 마세요. 남기는 사물의 손잡이·다리·끈 같은 구조는 사진에서 보이는 개수와 붙은 쪽을 유지하세요. 한쪽에만 보이는 구조를 반대쪽에도 대칭으로 추가하거나 보이지 않는 연결부를 만들지 마세요. 행동에 필요한 원래 소품 한두 개만 남기고 음식·꽃·가방·나뭇잎·배경 장식 같은 부차적인 것은 생략하세요. 풍경이 주제라면 주요 지형과 구조물의 위치 관계만 간결한 몇 줄로 남기세요. 새 소품·가구·식물·동물·상황을 덧붙이지 마세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선입니다. 굵은 테두리를 피하고 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 색을 넣기 전에 채색할 영역을 딱 한 군데만 고르세요. 실제 사람의 상의가 보이면 그중 상의 하나를, 사람이 없으면 실제 주요 사물 하나의 한 면만 선택하세요. 선택한 영역만 원본 대표 색의 아주 연한 파스텔 단색으로 평평하게 채우세요. 그 외의 모든 사물과 배경은 외곽선 안까지 순백색으로 남기세요. 실제 얼굴이 보일 때의 아주 작은 연분홍 볼 포인트만 추가로 허용합니다. 색을 주변에 반복하거나 나머지 옷·피부·머리·가구·나뭇잎·물·하늘에 나눠 칠하지 마세요. 그림자만 주제인 사진은 예외로 그림자 외곽 안만 동일한 옅은 회색으로 평평하게 채우고 다른 부분에는 색을 넣지 마세요. 모든 명암·그라데이션·수채 번짐·종이 질감은 생략하세요.\n\n정사각형 순백색 배경에 주요 대상과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 글자·서명·로고·워터마크는 넣지 마세요.",
+        "referencedImages": [
+          "assets/images/spot-color-line-art.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-babd3c63-1311-4fd6-8a87-b451fa2de440.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/spot-color-line-art.webp",
+          "width": 1254,
+          "height": 1254,
+          "sourceSha256": "23e06d75bf1daf0113a332ee4a24414489c2f2272c67d5a353c0fa703b39c935",
+          "webpSha256": "736d81716eba60be725a77ed80b176296df5accc1dc723461b53e7bb1a2bdf9b",
+          "decodedRgbaSha256": "b57e1036bd05aa9606b4069eddbaf580f7472b389b2153840d421801f63de41b",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본·AI 변환 결과 · 원본 사진 한 장과 공개 v10 문구만 사용했으며 추가 지시·스타일 이미지·후편집은 없습니다. 안경·턱을 괸 자세·교차한 다리와 컵·테이블·의자의 관계를 살리고 얼굴·손발을 둥글게 단순화했습니다. 컵 손잡이는 원본처럼 한쪽에 남았습니다. 원본의 가방·빵은 생략되지 않았고 가구 비례·머리 선·미세한 색조 변화가 남습니다. 손가락은 간결하게 생략했으며 정확한 개수나 원본과 같은 세부 형태를 보장하지 않습니다."
+    },
+    {
+      "label": "사람 없는 풍경",
+      "source": {
+        "type": "AI-generated fictional photograph; not a user photograph",
+        "generationPrompt": "Create a realistic casual smartphone photograph, square composition, of an empty lakeside rest area in afternoon daylight. A single unoccupied green wooden bench at left, a low rectangular concrete table at right with one plain mustard yellow ceramic mug on top, a straight lakeshore railing behind them, calm lake and a distant low hill. Show the entire bench and table, no humans, no animals, no human silhouettes, no faces, no human reflections. Ordinary real materials and natural camera perspective, not illustration, no text or logos. This is a synthetic input photograph for testing photo-to-line-art subject preservation.",
+        "generatedFile": "exec-2a35eb2b-8479-42d6-b170-aa8bcc5171ec.png",
+        "publishedAsset": {
+          "file": "assets/images/spot-color-line-art.landscape.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "sourceSha256": "bcc77c75a1fcfd69d5afbeef65eb0363cb8ec612c8ddbc42a334284959564739",
+          "webpSha256": "75cf356afe34e9948148a4dfe16f5a676b8c30d9ec99bf018fc165e976f45a10",
+          "decodedRgbaSha256": "99d57f101863d735f2b44f23a78bc68ccef1f3c9e5bb768adb1ee6483574dd3b",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v10",
+        "prompt": "첨부 사진을 ‘얇은 펜으로 몇 번 슥 그린, 아기자기하고 소박한 일상 라인드로잉’으로 바꿔 주세요. 가장 중요한 그림체 기준은 적은 선, 둥근 큰 형태, 작고 편안한 표정입니다. 사진을 세밀하게 따라 그리기보다 큰 실루엣과 핵심 자세만으로 장면이 읽히게 귀엽게 단순화하세요. 원본 대상의 수와 종류, 주요 자세와 서로 기대거나 잡은 관계는 유지하세요.\n\n실제 사람이 보이는 경우에만 다음 캐릭터 표현을 적용하세요. 성인이라면 성인임이 느껴지는 편안한 비율을 유지하되 머리는 약간 둥글게, 몸과 손발은 부드럽고 소박하게 그리세요. 머리는 흰 속을 가진 한 덩어리로, 바깥 윤곽과 가르마·큰 흐름 곡선 두세 개만 남기세요. 보이는 얼굴은 짧고 부드러운 눈 선 두 개와 작은 미소 정도로, 코·속눈썹·입술 세부는 생략하세요. 안경은 간단한 테만 남기고 볼에는 아주 작은 연분홍 포인트를 넣어도 됩니다. 손은 작은 둥근 외곽과 필요한 엄지 선 정도로 표현하고 손가락 마디와 여러 내부선을 생략하세요. 손의 방향과 원래 동작·접촉을 유지하고 여분의 손가락을 추가하지 마세요. 가려진 손가락을 드러내거나 다섯 손가락을 억지로 펼치지 마세요. 신발은 끈·밑창 없는 둥근 윤곽 하나로 그리세요.\n\n사진에 없는 대상이나 세부를 새로 만들지 마세요. 사람이 없는 사진에는 사람을 그리지 마세요. 사람의 그림자만 보이면 바닥이나 벽 위의 평면적인 그림자 외곽만 단순하게 옮기고, 그 안에 얼굴·머리카락·옷·손가락 내부선을 만들거나 그림자의 주인인 실물 사람을 추가하지 마세요. 뒷모습이나 얼굴이 가려진 사람에게 새 얼굴을 그리지 마세요. 사물·동물·무늬를 사람으로 바꾸거나 의인화하지 마세요. 사진 밖으로 이어져 잘린 윤곽은 원본의 잘린 경계에서 그대로 끝내세요. 보이지 않던 끝부분을 둥글게 마감하거나 신체·사물의 빠진 부분을 상상해 완성하지 마세요. 이 조건은 원본의 내용에 관한 것이며 둥글고 귀여운 그림체의 단순화는 그대로 유지하세요.\n\n옷은 큰 외곽선과 꼭 필요한 접힘 한두 개로만 그리세요. 잔머리·옷의 잔주름·봉제선·단추·주머니는 생략하세요. 원본에 있는 가구도 상판·등받이·좌판·다리 등 기본 구조만 몇 개의 선으로 둥글고 단순하게 옮기세요. 실제 가구의 장식과 복잡한 다리 구조는 복사하지 마세요. 남기는 사물의 손잡이·다리·끈 같은 구조는 사진에서 보이는 개수와 붙은 쪽을 유지하세요. 한쪽에만 보이는 구조를 반대쪽에도 대칭으로 추가하거나 보이지 않는 연결부를 만들지 마세요. 행동에 필요한 원래 소품 한두 개만 남기고 음식·꽃·가방·나뭇잎·배경 장식 같은 부차적인 것은 생략하세요. 풍경이 주제라면 주요 지형과 구조물의 위치 관계만 간결한 몇 줄로 남기세요. 새 소품·가구·식물·동물·상황을 덧붙이지 마세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선입니다. 굵은 테두리를 피하고 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 색을 넣기 전에 채색할 영역을 딱 한 군데만 고르세요. 실제 사람의 상의가 보이면 그중 상의 하나를, 사람이 없으면 실제 주요 사물 하나의 한 면만 선택하세요. 선택한 영역만 원본 대표 색의 아주 연한 파스텔 단색으로 평평하게 채우세요. 그 외의 모든 사물과 배경은 외곽선 안까지 순백색으로 남기세요. 실제 얼굴이 보일 때의 아주 작은 연분홍 볼 포인트만 추가로 허용합니다. 색을 주변에 반복하거나 나머지 옷·피부·머리·가구·나뭇잎·물·하늘에 나눠 칠하지 마세요. 그림자만 주제인 사진은 예외로 그림자 외곽 안만 동일한 옅은 회색으로 평평하게 채우고 다른 부분에는 색을 넣지 마세요. 모든 명암·그라데이션·수채 번짐·종이 질감은 생략하세요.\n\n정사각형 순백색 배경에 주요 대상과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 글자·서명·로고·워터마크는 넣지 마세요.",
+        "referencedImages": [
+          "assets/images/spot-color-line-art.landscape.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-a21b3ce4-0554-4ca5-8453-4cee12fc669d.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/spot-color-line-art.landscape.webp",
+          "width": 1254,
+          "height": 1254,
+          "sourceSha256": "65445d593b083b2fb8790f6dee215a59714f0c36b27c2bb288d6f897ebc1d921",
+          "webpSha256": "81869e53eb0ea2595bd83b30b7a56401332a47192c6aff19181e0fbefc583c87",
+          "decodedRgbaSha256": "e9bad50192d8cfed1f760d30f7781ff28e6428e0d21388e03ff21eed6c558992",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본·AI 변환 결과 · 원본 사진 한 장과 공개 v10 문구만 사용했으며 추가 지시·스타일 이미지·후편집은 없습니다. 원본에 없는 사람이 추가되지 않았고 벤치·테이블·컵·난간·호수의 위치 관계를 간결한 선으로 옮겼습니다. 벤치와 컵에 각각 색이 남고 물에도 옅은 색 선이 있어 문구의 한 군데 채색 조건을 완전히 따르지는 않았습니다. 잎·바닥 선과 비례·구도 차이가 남습니다."
+    },
+    {
+      "label": "사람 그림자",
+      "source": {
+        "type": "AI-generated fictional photograph; not a user photograph",
+        "generationPrompt": "Create a realistic square smartphone photograph aimed steeply downward at plain warm beige pavement in strong low evening sunshine. In the frame are only the long dark cast shadows of two adults standing side by side; the left person's shadow has one arm raised waving, the right shadow's arms rest at its sides. Both shadows have small featureless rounded head silhouettes and long torso and leg silhouettes, clearly flat shadows cast onto the pavement with subtle ground texture visible through the darkness. No actual bodies, no real people, no feet or hands entering the camera frame, no reflections, no facial features or clothing details within the shadows, no extra props, no vegetation, no text or logos. The shadows extend from the bottom edge toward the upper center, retaining believable camera optics and sunlight. This is a synthetic input photograph for testing cast-shadow preservation.",
+        "generatedFile": "exec-cdb52325-73df-4424-9d26-50bcd90cfb5d.png",
+        "publishedAsset": {
+          "file": "assets/images/spot-color-line-art.shadow.reference.webp",
+          "width": 1254,
+          "height": 1254,
+          "sourceSha256": "73dcfcb6ccbc706ccfb3820cc6baf8573c223e3a576887cba3b5dfca083abb9a",
+          "webpSha256": "6a2230755ebdf2a9f371bff67e2c65015df0e5a5ce120bcb768ef4d02932d51f",
+          "decodedRgbaSha256": "d95bf6200ce0fb6611dcfb44b5439c4d40b9e05665069960e75a7113297d58e7",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v10",
+        "prompt": "첨부 사진을 ‘얇은 펜으로 몇 번 슥 그린, 아기자기하고 소박한 일상 라인드로잉’으로 바꿔 주세요. 가장 중요한 그림체 기준은 적은 선, 둥근 큰 형태, 작고 편안한 표정입니다. 사진을 세밀하게 따라 그리기보다 큰 실루엣과 핵심 자세만으로 장면이 읽히게 귀엽게 단순화하세요. 원본 대상의 수와 종류, 주요 자세와 서로 기대거나 잡은 관계는 유지하세요.\n\n실제 사람이 보이는 경우에만 다음 캐릭터 표현을 적용하세요. 성인이라면 성인임이 느껴지는 편안한 비율을 유지하되 머리는 약간 둥글게, 몸과 손발은 부드럽고 소박하게 그리세요. 머리는 흰 속을 가진 한 덩어리로, 바깥 윤곽과 가르마·큰 흐름 곡선 두세 개만 남기세요. 보이는 얼굴은 짧고 부드러운 눈 선 두 개와 작은 미소 정도로, 코·속눈썹·입술 세부는 생략하세요. 안경은 간단한 테만 남기고 볼에는 아주 작은 연분홍 포인트를 넣어도 됩니다. 손은 작은 둥근 외곽과 필요한 엄지 선 정도로 표현하고 손가락 마디와 여러 내부선을 생략하세요. 손의 방향과 원래 동작·접촉을 유지하고 여분의 손가락을 추가하지 마세요. 가려진 손가락을 드러내거나 다섯 손가락을 억지로 펼치지 마세요. 신발은 끈·밑창 없는 둥근 윤곽 하나로 그리세요.\n\n사진에 없는 대상이나 세부를 새로 만들지 마세요. 사람이 없는 사진에는 사람을 그리지 마세요. 사람의 그림자만 보이면 바닥이나 벽 위의 평면적인 그림자 외곽만 단순하게 옮기고, 그 안에 얼굴·머리카락·옷·손가락 내부선을 만들거나 그림자의 주인인 실물 사람을 추가하지 마세요. 뒷모습이나 얼굴이 가려진 사람에게 새 얼굴을 그리지 마세요. 사물·동물·무늬를 사람으로 바꾸거나 의인화하지 마세요. 사진 밖으로 이어져 잘린 윤곽은 원본의 잘린 경계에서 그대로 끝내세요. 보이지 않던 끝부분을 둥글게 마감하거나 신체·사물의 빠진 부분을 상상해 완성하지 마세요. 이 조건은 원본의 내용에 관한 것이며 둥글고 귀여운 그림체의 단순화는 그대로 유지하세요.\n\n옷은 큰 외곽선과 꼭 필요한 접힘 한두 개로만 그리세요. 잔머리·옷의 잔주름·봉제선·단추·주머니는 생략하세요. 원본에 있는 가구도 상판·등받이·좌판·다리 등 기본 구조만 몇 개의 선으로 둥글고 단순하게 옮기세요. 실제 가구의 장식과 복잡한 다리 구조는 복사하지 마세요. 남기는 사물의 손잡이·다리·끈 같은 구조는 사진에서 보이는 개수와 붙은 쪽을 유지하세요. 한쪽에만 보이는 구조를 반대쪽에도 대칭으로 추가하거나 보이지 않는 연결부를 만들지 마세요. 행동에 필요한 원래 소품 한두 개만 남기고 음식·꽃·가방·나뭇잎·배경 장식 같은 부차적인 것은 생략하세요. 풍경이 주제라면 주요 지형과 구조물의 위치 관계만 간결한 몇 줄로 남기세요. 새 소품·가구·식물·동물·상황을 덧붙이지 마세요.\n\n외곽선과 내부선 모두 1254px 정사각형 기준 약 1~2px의 아주 가늘고 균일한 따뜻한 회갈색 펜 선입니다. 굵은 테두리를 피하고 선 끝은 가볍게 사라지거나 끊어져도 됩니다. 색을 넣기 전에 채색할 영역을 딱 한 군데만 고르세요. 실제 사람의 상의가 보이면 그중 상의 하나를, 사람이 없으면 실제 주요 사물 하나의 한 면만 선택하세요. 선택한 영역만 원본 대표 색의 아주 연한 파스텔 단색으로 평평하게 채우세요. 그 외의 모든 사물과 배경은 외곽선 안까지 순백색으로 남기세요. 실제 얼굴이 보일 때의 아주 작은 연분홍 볼 포인트만 추가로 허용합니다. 색을 주변에 반복하거나 나머지 옷·피부·머리·가구·나뭇잎·물·하늘에 나눠 칠하지 마세요. 그림자만 주제인 사진은 예외로 그림자 외곽 안만 동일한 옅은 회색으로 평평하게 채우고 다른 부분에는 색을 넣지 마세요. 모든 명암·그라데이션·수채 번짐·종이 질감은 생략하세요.\n\n정사각형 순백색 배경에 주요 대상과 필요한 소품을 작게, 중앙보다 조금 아래에 모으세요. 그림 전체 높이는 화면의 약 절반이며 위와 양옆에 넓은 흰 여백을 남기세요. 글자·서명·로고·워터마크는 넣지 마세요.",
+        "referencedImages": [
+          "assets/images/spot-color-line-art.shadow.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-0240839e-b456-4c0c-84d5-850a1021452a.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/spot-color-line-art.shadow.webp",
+          "width": 1254,
+          "height": 1254,
+          "sourceSha256": "352df4fdbb8cae93edb0d3d02dbc22f59edf158e83f981ff9f312fc66e011feb",
+          "webpSha256": "1458fa4a75ad6cff4f0348304339cb28ad7ee3371d4d2c039e2210e2f1372656",
+          "decodedRgbaSha256": "d81c784cce05e1fda94b190e012c846860d4537e65745902c4d536c2e6df459e",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본·AI 변환 결과 · 원본 사진 한 장과 공개 v10 문구만 사용했으며 추가 지시·스타일 이미지·후편집은 없습니다. 두 그림자와 손을 든 동작을 남겼으며 얼굴·머리카락·의상이나 별도의 실물 사람은 만들지 않았습니다. 잘린 끝을 새로운 발 모양으로 완성하지 않았습니다. 팔 근처 내부선과 회색 농담이 조금 남고 손가락 외곽·실루엣 비례는 원본과 다릅니다."
+    }
+  ],
+  "thumbnail": {
+    "file": "assets/images/spot-color-line-art.thumb.webp",
+    "width": 480,
+    "height": 480,
+    "sha256": "7729fdaef3efffdfe717fd249b4b491acb72ca167aeba43a440281ac0ed08dcf",
+    "source": "assets/images/spot-color-line-art.webp",
+    "processing": "Aspect-preserving downscale to 480px, lossless WebP; thumbnail is intentionally resized."
+  },
+  "selectionHistory": [
+    "v6/v7 prioritized source detail but lost the preferred rounded character style.",
+    "v8/v9 restored the cute style; a clipped-shadow completion failure led to a generic boundary-preservation instruction.",
+    "v10 added visible structure counts/sides and more explicit color selection.",
+    "v11/v12 explored stricter color and orientation instructions, but the user preferred v10 portrait and landscape. Only exact v10 outputs are published."
+  ],
+  "limitations": [
+    "Each published example used one source photo and exact v10 only; no hidden instructions or post-editing.",
+    "Landscape has multiple colored areas despite one-area prompt instruction; user preferred this output.",
+    "Original bag/croissant remain in portrait despite omission instruction.",
+    "Some shadow interior lines, contour differences, furniture design changes and tint variation remain.",
+    "Fingers are abstracted; no statistical claim of improved anatomical accuracy or universal absence of added content is made."
+  ],
+  "catalogPreservation": {
+    "existingItemUpdated": "spot-color-line-art",
+    "previousVersion": "v5",
+    "idAndOrderUnchanged": true,
+    "totalItems": 64,
+    "otherItemsUnchanged": true
+  },
+  "verification": {
+    "unitTests": "34 passed",
+    "build": "64 prompts",
+    "browserFirstRun": "65 passed, 1 timed out at default 30 seconds",
+    "browserRerun": "same failed test passed in 8.4 seconds",
+    "browserScenariosCovered": 66,
+    "testSettingsChanged": false,
+    "cliGlobalTimeoutMs": 900000,
+    "changedItemDesktopAndMobileExamples": "passed on first run"
+  }
+}
