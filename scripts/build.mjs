@@ -5,7 +5,7 @@ import { createSocialImage, socialTags, escapeHtml } from './social.mjs';
 import { analyticsConfig } from '../src/analytics-config.mjs';
 import { promptUrl } from '../src/sharing.mjs';
 import { searchGuides, searchMetadata } from '../src/search-guides.mjs';
-import { renderStaticCatalog, renderStaticPrompt, renderSitemap } from './static-content.mjs';
+import { renderStaticCatalog, renderStaticPrompt, renderSitemap, renderHomeStructuredData, renderPromptStructuredData } from './static-content.mjs';
 
 const prompts = await readCatalog();
 for (const id of Object.keys(searchGuides)) if (!prompts.some(prompt => prompt.id === id)) throw new Error(`Unknown search guide: ${id}`);
@@ -27,7 +27,9 @@ const template = (await readFile(resolve(projectRoot, 'index.html'), 'utf8'))
   .replace('</head>', isPreview ? '  <meta name="robots" content="noindex, nofollow">\n</head>' : '</head>');
 await writeFile(resolve(output, 'src/analytics-config.mjs'), 'export const analyticsConfig = ' + JSON.stringify({ ...analyticsConfig, siteUrl: siteUrl.href, ...(isPreview ? { measurementId: '' } : {}) }, null, 2) + ';\n');
 await writeFile(resolve(output, 'robots.txt'), isPreview ? 'User-agent: *\nDisallow: /\n' : 'User-agent: *\nAllow: /\nSitemap: ' + new URL('sitemap.xml', siteUrl).href + '\n');
-await writeFile(resolve(output, '_headers'), '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n' + (isPreview ? '  X-Robots-Tag: noindex, nofollow\n' : ''));
+await writeFile(resolve(output, '_headers'), '/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n' + (isPreview ? '  X-Robots-Tag: noindex, nofollow\n' : '')
+  // Social previews are content-hashed; gallery images keep their paths when revised, so cache them for a day only.
+  + '/assets/social/*\n  Cache-Control: public, max-age=31536000, immutable\n/assets/images/*\n  Cache-Control: public, max-age=86400\n');
 await writeFile(resolve(output, '404.html'), '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>페이지를 찾을 수 없습니다 — Prompt Gallery</title></head><body><h1>페이지를 찾을 수 없습니다</h1><p><a href="' + escapeHtml(siteUrl.href) + '">전체 프롬프트 둘러보기</a></p></body></html>');
 const images = new Map();
 for (const prompt of prompts) images.set(prompt.id, await createSocialImage(prompt, projectRoot, output));
@@ -38,7 +40,7 @@ const tagsFor = (prompt, url, title, description) => socialTags({
 });
 const homeTitle = /<title>(.*?)<\/title>/.exec(template)[1];
 const homeDescription = /<meta name="description" content="(.*?)">/.exec(template)[1];
-await writeFile(resolve(output, 'index.html'), template.replace('<!-- static-content -->', () => renderStaticCatalog(prompts)).replace('</head>', `  ${tagsFor(featured, siteUrl.href, homeTitle, homeDescription)}\n</head>`));
+await writeFile(resolve(output, 'index.html'), template.replace('<!-- static-content -->', () => renderStaticCatalog(prompts)).replace('</head>', `  ${tagsFor(featured, siteUrl.href, homeTitle, homeDescription)}\n  ${renderHomeStructuredData(siteUrl, homeDescription)}\n</head>`));
 for (const prompt of prompts) {
   const { title, description } = searchMetadata(prompt);
   const page = template
@@ -47,7 +49,7 @@ for (const prompt of prompts) {
     .replace(/(href|src)="\.\//g, '$1="../../')
     .replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
     .replace(/<meta name="description" content=".*?">/, `<meta name="description" content="${escapeHtml(description)}">`)
-    .replace('</head>', `  ${tagsFor(prompt, promptUrl(prompt.id, siteUrl), title, description)}\n</head>`);
+    .replace('</head>', `  ${tagsFor(prompt, promptUrl(prompt.id, siteUrl), title, description)}\n  ${renderPromptStructuredData(prompt, siteUrl, { title, description })}\n</head>`);
   const directory = resolve(output, 'prompts', prompt.id);
   await mkdir(directory, { recursive: true });
   await writeFile(resolve(directory, 'index.html'), page);
