@@ -40,7 +40,7 @@ npm run check
 
 앱 CD는 Cloudflare Pages GitHub 연동이 담당한다. 보호된 main에 PR을 병합하면 Cloudflare가 `npm test && npm run build` 후 dist를 배포한다. 운영 브랜치 main과 환경 변수는 [Cloudflare 운영 문서](cloudflare-pages.md)를 따른다. GitHub Actions에서 CI가 성공했다고 Cloudflare 배포까지 성공한 것으로 보지 않는다.
 
-GitHub Pages 게시 및 이전 주소용 리다이렉트는 운영하지 않는다. GitHub Actions에는 CI만 두고 사이트 배포는 Cloudflare Pages가 담당한다.
+사이트 배포는 Cloudflare Pages가 담당한다. GitHub Actions의 CI 외에는 이전 주소용 `.github/workflows/legacy-redirects.yml`만 있으며, main에서 수동 실행할 때만 리다이렉트 페이지를 GitHub Pages에 게시한다. 이 워크플로만 GitHub Pages 쓰기 권한을 가진다.
 
 ## main 보호 규칙
 
