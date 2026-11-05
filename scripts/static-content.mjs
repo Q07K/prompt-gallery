@@ -38,7 +38,33 @@ export function renderSearchGuide(prompt) {
   return '<section class="prompt-guide" aria-label="사진 준비와 결과 안내"><h2>' + e(guide.title) + '</h2><p>' + e(guide.intro) + '</p>' + guide.sections.map(section => '<h3>' + e(section.heading) + '</h3><p>' + e(section.body) + '</p>').join('') + '</section>';
 }
 
+// Result images only; the AI-generated input photos are not what searchers look for.
+const resultImages = prompt => [...new Set([prompt.image, ...(prompt.examples || []).map(example => example.image)].filter(Boolean))];
+
 export function renderSitemap(prompts, siteRoot) {
-  const urls = [new URL(siteRoot).href, ...ordered(prompts).map(prompt => promptUrl(prompt.id, siteRoot))];
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url => `  <url><loc>${e(url)}</loc></url>`).join('\n')}\n</urlset>\n`;
+  const root = new URL(siteRoot).href;
+  const entries = [{ url: root, images: [] }, ...ordered(prompts).map(prompt => ({ url: promptUrl(prompt.id, siteRoot), images: resultImages(prompt).map(path => new URL(path, root).href) }))];
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${entries.map(({ url, images }) => `  <url><loc>${e(url)}</loc>${images.map(image => `<image:image><image:loc>${e(image)}</image:loc></image:image>`).join('')}</url>`).join('\n')}\n</urlset>\n`;
+}
+
+const jsonLd = data => `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', ...data }).replace(/</g, '\\u003c')}</script>`;
+
+// WebSite on the home page lets Google show "Prompt Gallery" as the site name instead of the pages.dev host.
+export function renderHomeStructuredData(siteRoot, description) {
+  return jsonLd({ '@type': 'WebSite', name: 'Prompt Gallery', alternateName: ['prompt.gallery', 'GPT 사진 변환 프롬프트 모음'], url: new URL(siteRoot).href, inLanguage: 'ko', description });
+}
+
+export function renderPromptStructuredData(prompt, siteRoot, { title, description }) {
+  const url = promptUrl(prompt.id, siteRoot);
+  return jsonLd({
+    '@graph': [
+      { '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Prompt Gallery', item: new URL(siteRoot).href },
+        { '@type': 'ListItem', position: 2, name: prompt.title, item: url },
+      ] },
+      { '@type': 'WebPage', '@id': url, url, name: title, description, inLanguage: 'ko', isPartOf: { '@type': 'WebSite', name: 'Prompt Gallery', url: new URL(siteRoot).href },
+        primaryImageOfPage: { '@type': 'ImageObject', contentUrl: new URL(prompt.image, siteRoot).href, width: prompt.width, height: prompt.height },
+        keywords: prompt.tags?.join(', ') },
+    ],
+  });
 }

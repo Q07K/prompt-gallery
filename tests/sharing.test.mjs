@@ -42,6 +42,11 @@ test('built pages expose each actual result to crawlers without running JavaScri
       assert.ok(page.includes(guide.intro));
       for (const section of guide.sections) assert.ok(page.includes(section.body));
     } else assert.ok(!page.includes('<section class="prompt-guide"'));
+    const { title, description } = searchMetadata(prompt);
+    assert.ok(title.length <= 70, `${prompt.id} search title is too long for results pages`);
+    assert.ok(description.length <= 200, `${prompt.id} search description is too long for results pages`);
+    const structured = JSON.parse(/<script type="application\/ld\+json">(.*?)<\/script>/.exec(page)[1]);
+    assert.equal(structured['@graph'][0].itemListElement.at(-1).item, promptUrl(prompt.id, siteRoot));
     assert.equal((page.match(/property="og:image" /g) || []).length, 1);
     assert.ok(page.includes(`<h1 id="page-title">${prompt.title}</h1>`));
     assert.ok(page.includes('id="static-content"'));
@@ -78,6 +83,10 @@ test('built pages expose each actual result to crawlers without running JavaScri
   const sitemap = await readFile(resolve(projectRoot, 'dist/sitemap.xml'), 'utf8');
   assert.equal((sitemap.match(/<loc>/g) || []).length, catalog.length + 1);
   for (const prompt of catalog) assert.ok(sitemap.includes(`<loc>${promptUrl(prompt.id, siteRoot)}</loc>`));
+  for (const prompt of catalog) assert.ok(sitemap.includes(`<image:loc>${siteRoot}${prompt.image}</image:loc>`));
+  assert.ok(home.includes('"@type":"WebSite"'));
+  const headers = await readFile(resolve(projectRoot, 'dist/_headers'), 'utf8');
+  assert.ok(headers.includes('/assets/social/*\n  Cache-Control: public, max-age=31536000, immutable'));
 });
 
 test('Cloudflare branch previews cannot collect production analytics or be indexed', async () => {

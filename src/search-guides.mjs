@@ -60,10 +60,12 @@ export const searchGuides = {
   },
 };
 
+// Without a guide, keep the search snippet short and task-focused; testing caveats stay in the page body.
 export function searchMetadata(prompt) {
   const guide = searchGuides[prompt.id];
+  if (guide) return { title: `${guide.title} — Prompt Gallery`, description: guide.description };
   return {
-    title: `${guide?.title || prompt.title} — Prompt Gallery`,
-    description: guide?.description || `${prompt.inputLabel || '사진 1장 필요'}. ${prompt.usage}`,
+    title: `${prompt.title} — GPT 사진 변환 프롬프트 | Prompt Gallery`,
+    description: `ChatGPT에 사진을 첨부해 '${prompt.title}' 이미지를 만드는 프롬프트입니다. 준비할 사진: ${prompt.inputLabel || '사진 1장 필요'}. 원본 사진과 AI 변환 결과를 비교하고 프롬프트 원문을 복사하세요.`,
   };
 }
