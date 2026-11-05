@@ -21,7 +21,15 @@ Search Console은 새 URL 접두어 속성을 HTML 태그로 인증하고 sitema
 
 ## 운영 주소 기준
 
-공개 주소와 공유 링크, GA4 웹 스트림, canonical, robots.txt와 sitemap.xml은 https://q07k-prompt-gallery.pages.dev/ 를 기준으로 관리한다. GitHub Pages는 게시를 중지하며 이전 GitHub 주소용 리다이렉트·인증 태그·배포 워크플로를 운영하지 않는다. Search Console의 과거 속성 및 GA4의 기존 기록은 보존한다.
+공개 주소와 공유 링크, GA4 웹 스트림, canonical, robots.txt와 sitemap.xml은 https://q07k-prompt-gallery.pages.dev/ 를 기준으로 관리한다. GitHub Pages는 앱 콘텐츠를 게시하지 않는다. Search Console의 과거 속성 및 GA4의 기존 기록은 보존한다.
+
+### 이전 GitHub 주소 리다이렉트
+
+2026-10-20 이관 때 이전 주소(https://q07k.github.io/prompt-gallery/)를 리다이렉트 없이 껐더니, Google이 그때 색인한 github.io 페이지·이미지가 검색 결과에 남은 채 404를 보여 주고 새 주소로 신호가 넘어가지 않았다. 그래서 2026-11-05에 리다이렉트 전용 게시를 복구했다.
+
+`.github/workflows/legacy-redirects.yml`(수동 실행, main 전용)이 `scripts/build-redirects.mjs`로 만든 `legacy-dist/`만 GitHub Pages에 게시한다. 저장소 Settings → Pages의 Source는 GitHub Actions여야 한다. 각 이전 주소는 운영 주소의 같은 페이지로 canonical·즉시 meta refresh·JavaScript 이동을 하며 query/hash(이전 `#prompt=` 링크 포함)를 보존한다. HTTP 301이 아니고 Search Console 주소 변경 도구 대상도 아니다. 이미지·GA4 태그는 게시하지 않고 이전 Search Console 속성의 인증 태그만 유지한다. `sitemap.xml`은 이전 주소 목록이며 이전 속성에만 제출한다.
+
+새 프롬프트는 404.html의 경로 대응으로도 이동하지만 404 상태로 응답하므로, 이전 주소에 이미 색인된 프롬프트가 바뀌거나 늘었다면 워크플로를 다시 실행한다. 검색 결과에서 github.io 주소가 사라지고 운영 주소로 바뀐 것을 확인하기 전에는 이 게시를 내리지 않는다.
 
 브라우저 북마크는 origin별 localStorage에 저장된다.
 

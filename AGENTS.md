@@ -2,7 +2,7 @@
 
 ## Current operations and stale checkouts
 
-The production site is hosted on **Cloudflare Pages**. GitHub Actions provides **CI only**; GitHub Pages publishing is disabled. Read [docs/cloudflare-pages.md](docs/cloudflare-pages.md) for the production URL, project and build settings. Do not treat a historical Pages deployment or an old branch's pages.yml as the current hosting configuration.
+The production site is hosted on **Cloudflare Pages**. GitHub Actions provides CI, plus a manual workflow that publishes **redirect-only** pages to the old GitHub Pages address (no app content). Read [docs/cloudflare-pages.md](docs/cloudflare-pages.md) for the production URL, project and build settings. Do not treat a historical Pages deployment or an old branch's pages.yml as the current hosting configuration.
 
 For questions about the current site, deployment, analytics or SEO, first check the actual branch, HEAD, worktree and dirty state. A project opened in a new session may still be on an older content branch, while the migration was merged from another worktree.
 
