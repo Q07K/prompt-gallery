@@ -1,5 +1,77 @@
 [
   {
+    "id": "geometric-travel-poster",
+    "title": "내 사진을 기하학 포스터로",
+    "category": "포스터",
+    "tags": [
+      "기하학",
+      "미니멀",
+      "빈티지",
+      "반려동물",
+      "풍경",
+      "인물"
+    ],
+    "image": "assets/images/geometric-travel-poster.webp",
+    "thumbnail": "assets/images/geometric-travel-poster.thumb.webp",
+    "width": 1536,
+    "height": 1024,
+    "color": "#f3e8d4",
+    "prompt": "Turn the supplied photo into a single minimalist geometric art print on light neutral ivory paper, landscape 3:2. Use only the visible subject matter in the photo. For a person or animal, make the figure the main graphic and preserve subject count, pose, facing direction, and the few visible details that distinguish it, such as hairstyle, distinctive clothing, the placement of coat markings, or a collar. Keep an uncluttered indoor or studio background as bare paper. For a landscape, let the dominant landform, structure, or water shape be the subject, and keep the relationships among the visible landforms and water. In a mixed scene, keep the principal subject and the most distinctive part of its setting. Include a supporting object or landscape feature only when it is visible in the source and helps identify the scene. Do not invent scenery, objects, figures, or a context like travel or sport. Abstract construction lines are fine.\n\nCompose the selected shapes as one compact graphic centered on the page, with generous uninterrupted ivory paper around it. Allow the sky, ground, and unneeded background to disappear into the bare paper. Build the image from broad flat circles, triangles, stepped silhouettes, and repeated arcs. Simplify faces or muzzles to a few recognizable shapes, clothing to solid planes, and props to clean silhouettes. Omit incidental details, folds, fur strands, foliage texture, realistic shadows, gradients, and photoreal detail. Use three or four muted inks, with the source's strongest color as a focal accent. Add a few faint construction lines aligned to the artwork, a small row of ink swatches, and an understated one- to three-word title describing what can actually be seen. Use generic descriptive words and no proper names, place names, or inferred activities. Keep the ivory paper nearly smooth with faint matte print grain. No frame, inset border, photo panel, mockup, logos, or watermark. Return only the completed print.",
+    "inputRequirement": "image",
+    "inputLabel": "인물·반려동물·풍경 사진 1장 필요",
+    "usage": "사진 한 장을 첨부하고 프롬프트를 그대로 보내세요. 원본의 주요 형태와 색을 단순한 도형으로 정리해 아이보리 종이 위에 배치합니다. 공개 예시는 해안 장면, 반려동물, 풍경, 인물 단독 AI 가상 사진에 같은 v4 문구를 적용한 결과입니다.",
+    "exampleNote": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 노란 재킷, 자전거의 진행 방향, 해안 절벽과 등대의 위치를 살렸습니다. 바퀴살과 주변 도로는 단순화해 생략했습니다.",
+    "referenceImages": [
+      "assets/images/geometric-travel-poster.reference.webp"
+    ],
+    "author": "@Q07K",
+    "sourceUrl": "https://github.com/Q07K/prompt-gallery",
+    "sample": false,
+    "order": -59,
+    "examples": [
+      {
+        "label": "해안 자전거 여행",
+        "image": "assets/images/geometric-travel-poster.webp",
+        "width": 1536,
+        "height": 1024,
+        "referenceImages": [
+          "assets/images/geometric-travel-poster.reference.webp"
+        ],
+        "note": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 노란 재킷, 자전거의 진행 방향, 해안 절벽과 등대의 위치를 살렸습니다. 바퀴살과 주변 도로는 단순화해 생략했습니다."
+      },
+      {
+        "label": "반려동물",
+        "image": "assets/images/geometric-travel-poster.pet.webp",
+        "width": 1536,
+        "height": 1024,
+        "referenceImages": [
+          "assets/images/geometric-travel-poster.pet.reference.webp"
+        ],
+        "note": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 삼색 고양이의 검은 얼굴 무늬, 주황색 등, 청록색 목걸이와 말린 꼬리를 살렸습니다. 귀 위쪽에 남은 여백은 대표 예시보다 좁습니다."
+      },
+      {
+        "label": "풍경",
+        "image": "assets/images/geometric-travel-poster.landscape.webp",
+        "width": 1536,
+        "height": 1024,
+        "referenceImages": [
+          "assets/images/geometric-travel-poster.landscape.reference.webp"
+        ],
+        "note": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 높이가 다른 두 설산 봉우리, 왼쪽 침엽수 숲, 청록색 호숫가의 곡선을 살렸습니다. 장면의 가로 폭은 대표 예시보다 넓습니다."
+      },
+      {
+        "label": "인물 단독",
+        "image": "assets/images/geometric-travel-poster.portrait.webp",
+        "width": 1536,
+        "height": 1024,
+        "referenceImages": [
+          "assets/images/geometric-travel-poster.portrait.reference.webp"
+        ],
+        "note": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 묶은 머리, 붉은 상의, 두 팔의 방향과 구부린 다리를 살렸습니다. 위로 뻗은 손 주변의 여백은 대표 예시보다 좁습니다."
+      }
+    ]
+  },
+  {
     "id": "thermal-camera",
     "title": "내 사진을 열화상 카메라로",
     "category": "인물",

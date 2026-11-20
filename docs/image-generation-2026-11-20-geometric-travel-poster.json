@@ -1,0 +1,173 @@
+{
+  "id": "geometric-travel-poster",
+  "date": "2026-11-20",
+  "tool": "image_gen.imagegen",
+  "version": "v4",
+  "publicPrompt": "Turn the supplied photo into a single minimalist geometric art print on light neutral ivory paper, landscape 3:2. Use only the visible subject matter in the photo. For a person or animal, make the figure the main graphic and preserve subject count, pose, facing direction, and the few visible details that distinguish it, such as hairstyle, distinctive clothing, the placement of coat markings, or a collar. Keep an uncluttered indoor or studio background as bare paper. For a landscape, let the dominant landform, structure, or water shape be the subject, and keep the relationships among the visible landforms and water. In a mixed scene, keep the principal subject and the most distinctive part of its setting. Include a supporting object or landscape feature only when it is visible in the source and helps identify the scene. Do not invent scenery, objects, figures, or a context like travel or sport. Abstract construction lines are fine.\n\nCompose the selected shapes as one compact graphic centered on the page, with generous uninterrupted ivory paper around it. Allow the sky, ground, and unneeded background to disappear into the bare paper. Build the image from broad flat circles, triangles, stepped silhouettes, and repeated arcs. Simplify faces or muzzles to a few recognizable shapes, clothing to solid planes, and props to clean silhouettes. Omit incidental details, folds, fur strands, foliage texture, realistic shadows, gradients, and photoreal detail. Use three or four muted inks, with the source's strongest color as a focal accent. Add a few faint construction lines aligned to the artwork, a small row of ink swatches, and an understated one- to three-word title describing what can actually be seen. Use generic descriptive words and no proper names, place names, or inferred activities. Keep the ivory paper nearly smooth with faint matte print grain. No frame, inset border, photo panel, mockup, logos, or watermark. Return only the completed print.",
+  "revision": "v3 introduced unsupported travel context for some inputs and assigned a real place name to a fictional landscape. v4 limits scenery and captions to visible subject matter.",
+  "assetEncoding": "Sharp lossless WebP for references and full results. The thumbnail is resized at the original aspect ratio.",
+  "examples": [
+    {
+      "label": "해안 자전거 여행",
+      "source": {
+        "type": "AI-generated fictional photograph",
+        "tool": "image_gen.imagegen",
+        "generationPrompt": "Create one photorealistic 3:2 horizontal travel snapshot of a fictional Atlantic island coast, as if taken with a full-frame digital camera by a visitor from the side of a coastal road. Composition: a single adult cyclist in a vivid mustard-yellow windbreaker, charcoal trousers, and black helmet rides a dark blue touring bicycle toward the right in profile along a gently curving gray asphalt road in the lower third, slightly left of center. Both bicycle wheels are visible in profile. A white cylindrical lighthouse with a red lantern room stands on the far-right grassy headland in the middle distance, above distinct dark rocky cliffs. The muted teal ocean spans the left half, with a thin line of white foam at the base of the cliffs. Pale blue coastal sky and light clouds. Bright lightly overcast afternoon, natural muted colors, realistic and specific details. Strong recognizable forms, straightforward framing with the cyclist and lighthouse comfortably inside the image, natural road and human proportions. No title, no watermarks, no border. Output just the realistic unedited-looking photograph.",
+        "generatedFile": "exec-5cc5ae91-a45a-4b19-8dcc-c922ddd8195a.png",
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.reference.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "b3c1697dc9ab565256a02edb6c08ad6d81a9e1c87ebe69de948c8b04d6615303",
+          "webpSha256": "0775f1dde31a8a02a42d057ff30bdb10657e1b5f45b1cb1f1593c82e5fb994b3",
+          "decodedRgbaSha256": "3c288848c404251e7cc1ae67850f827aa6539acc603a04eb3fd569dde470a0d1",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v4",
+        "referencedImages": [
+          "assets/images/geometric-travel-poster.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-3cc9946a-9178-41de-b963-d4fb8e058551.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "97685327ed5c48fecde5aad03afb567c118d4c4f91b953c9cba8e04ba8b9ba3b",
+          "webpSha256": "5f136210907b16749f3067a3d0d1bdea18e055d00fabf52e60378fa0d86e413c",
+          "decodedRgbaSha256": "3cda83a4a80ab0a0581d6537f4cfb1863bf9b126b37f148362cc3599dec41bca",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 노란 재킷, 자전거의 진행 방향, 해안 절벽과 등대의 위치를 살렸습니다. 바퀴살과 주변 도로는 단순화해 생략했습니다."
+    },
+    {
+      "label": "반려동물",
+      "source": {
+        "type": "AI-generated fictional photograph",
+        "tool": "image_gen.imagegen",
+        "generationPrompt": "Generate one photorealistic landscape 3:2 snapshot of a fictional adult shorthaired calico pet cat at home. One cat, seated in a clear left-facing three-quarter profile, with its full body and thick dark tail curled around its front paws fully in frame. It has a small triangular charcoal patch over the near eye and ear, one clear burnt-orange patch high on its back, white chest and paws, and a dark tail. Teal collar with a small round brass tag. Muted light gray indoor wall and pale oak floor, softly lit by a large window off-camera, with ample breathing room and the wall-floor line visible but no furniture or extra objects. Genuine natural pet photography, realistic fur and anatomy, no text or watermark.",
+        "generatedFile": "exec-c908044a-351c-41b9-baaa-0f05e00a13ca.png",
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.pet.reference.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "9cf931154f13381742888e868eec0b2d428be5fc8eac2b0b6e9f8041de5dd1b9",
+          "webpSha256": "faa47a1d6748c8d42da3ea1ff0181a1d65d369e5f99eb6ee846388ea3f9ef750",
+          "decodedRgbaSha256": "92737c2e05eab486402289020941d0fe30664bbabafbd8968b37f8b30f68e352",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v4",
+        "referencedImages": [
+          "assets/images/geometric-travel-poster.pet.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-ced5db27-7647-4f6d-9089-fdce9cce8b73.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.pet.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "c4df55d71884e872b859346ef961273d5e8904d24d145e0570c7ecbb29813e08",
+          "webpSha256": "71f7d0c03c1cbb11102c90f4a338be4cfa69122ca6b678e30cbb9828a8291ea4",
+          "decodedRgbaSha256": "fbcabe6857e58ed9b8e5061a33104a6bb006976d076baa3345ed79fb4bea4d27",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 삼색 고양이의 검은 얼굴 무늬, 주황색 등, 청록색 목걸이와 말린 꼬리를 살렸습니다. 귀 위쪽에 남은 여백은 대표 예시보다 좁습니다."
+    },
+    {
+      "label": "풍경",
+      "source": {
+        "type": "AI-generated fictional photograph",
+        "tool": "image_gen.imagegen",
+        "generationPrompt": "Generate one photorealistic 3:2 horizontal travel photograph of a fictional alpine valley with no people, animals, buildings, boats, or human-made objects. A distinctive broad snow-covered mountain with two uneven peaks sits in the background to the right of center. A softly curving turquoise glacial lake comes toward the viewer and bends left from a rocky shoreline. A small dark conifer peninsula projects into the lake from the left, showing clear depth order and a recognizable shoreline curve. Blue-gray rock, snow, restrained turquoise water, deep evergreen accents, soft bright overcast daylight, natural proportions, outdoor photography with realistic camera detail. No text, collage, or watermark.",
+        "generatedFile": "exec-cedd2573-61e4-4c54-917a-077e038f7dfe.png",
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.landscape.reference.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "1f22603fe6c4c2ba0fd6c6806c6e0d5dd5d37404c17e11235659434fa8d9f23c",
+          "webpSha256": "9d1f5a218d8a2fc2b91c386c58345a13b11cad475f93c59fd4d8737dd8188d14",
+          "decodedRgbaSha256": "7dee5dcb3a71cca51f12a384a1435a7a7629595906ac32575bcd8a0a307f1a72",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v4",
+        "referencedImages": [
+          "assets/images/geometric-travel-poster.landscape.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-fd42aeb9-ce87-4cd5-bd5f-18b5cdbddd5b.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.landscape.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "481dbb85c0c40797cba8eb05349cfc08ebfa8f703989fcbe78bdca75b887e65a",
+          "webpSha256": "5d46dddcd56a166b6db41e5598ee28638677ee609a511c9df475bf0dda8b6943",
+          "decodedRgbaSha256": "bcbf4abcdd9838b80975023872099bc41f2516bcd750591545ddfc1c94a7fcea",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 높이가 다른 두 설산 봉우리, 왼쪽 침엽수 숲, 청록색 호숫가의 곡선을 살렸습니다. 장면의 가로 폭은 대표 예시보다 넓습니다."
+    },
+    {
+      "label": "인물 단독",
+      "source": {
+        "type": "AI-generated fictional photograph",
+        "tool": "image_gen.imagegen",
+        "generationPrompt": "Generate one photorealistic 3:2 horizontal full-body photograph of one fictional adult female contemporary dancer alone in a plain light-gray studio with a seamless background, no objects, buildings, scenery, or cues suggesting a location. She has dark hair in a compact high bun and wears a rich rust-red sleeveless top and charcoal wide-legged trousers, barefoot. She is centered, facing left in profile, balancing in a clear asymmetric pose: the arm pointing left extends horizontally, the other arm reaches up at a diagonal, and the free leg bends up and back. Make the pose elegant but anatomically plausible, with both hands and feet inside the image. Natural skin tone, soft window-like light, realistic fabric, editorial portrait photography. No lettering or watermark.",
+        "generatedFile": "exec-c6f037de-2994-49ff-b57c-7f7dcb99c309.png",
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.portrait.reference.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "be3dbb7a0f3f536bda43dd376affe4d80caae1aa238875d467151fdcc341bdb6",
+          "webpSha256": "3c715900053285b09d3469a7dbfd8ae37d8e2eb85f82b9468c3dbe3a47f3b19a",
+          "decodedRgbaSha256": "47d2b005b87c2f313d22cc96bc0987245090124f01364c67ec795bc1e104c49b",
+          "decodedPixelsEqual": true
+        }
+      },
+      "transformation": {
+        "version": "v4",
+        "referencedImages": [
+          "assets/images/geometric-travel-poster.portrait.reference.webp"
+        ],
+        "additionalInstructions": "",
+        "styleImagesAttached": 0,
+        "transparent_background": false,
+        "generatedFile": "exec-d9779db1-1015-48b1-8154-56f6526f61e8.png",
+        "postEditing": false,
+        "publishedAsset": {
+          "file": "assets/images/geometric-travel-poster.portrait.webp",
+          "width": 1536,
+          "height": 1024,
+          "sourceSha256": "450084d593f09b1fc5ab06685063ecf0ecd95746c90ace367b0cc02f1ef8a772",
+          "webpSha256": "59e486726339cce2f2c10678b219b1e1b590f856028d323299feaa473d2c2dcc",
+          "decodedRgbaSha256": "e9ad5f087eed2aa3427fbd8dd5c3f2bc2ddb6686bdf7f65da1ace7d31b952bb4",
+          "decodedPixelsEqual": true
+        }
+      },
+      "review": "AI 가상 원본 한 장에 공개 v4 프롬프트를 적용한 결과입니다. 묶은 머리, 붉은 상의, 두 팔의 방향과 구부린 다리를 살렸습니다. 위로 뻗은 손 주변의 여백은 대표 예시보다 좁습니다."
+    }
+  ],
+  "thumbnail": {
+    "file": "assets/images/geometric-travel-poster.thumb.webp",
+    "width": 480,
+    "height": 320,
+    "webpSha256": "74eb2a4f11a4a3575c45714edf45a37d91d5af50a4773767661092795d8b6690"
+  }
+}
